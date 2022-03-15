@@ -1,38 +1,362 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html {
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+*{
+ box-sizing:border-box;
+ margin: 0;
+ padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.maindiv{
+  width: 50%;
+  box-shadow: 0 3px 10px rgb(197, 190, 190);
+margin: auto;
+margin-top: 60px;
+border-radius: 3px;
+transition: 500ms;
+margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.formdiv{
+  padding: 40px;
+
+  word-wrap    : break-word;
+overflow-wrap: break-word;
+
+}
+
+a:link{
+  text-decoration: none;
+}
+
+.blue{
+  border: none;
+  border-bottom: 1px solid rgb(182, 181, 181);
+  padding: 10px;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 16px;
+   
+}
+
+.blue:focus {
+  border: 2px solid #5494A3;
+}
+
+
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='grey' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 10px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 2rem;
+  padding: 1rem;
+  padding-right: 2rem;
+}
+
+
+
+/* input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+} */
+
+/* input.submitted.ng-invalid
+{
+  border:1px solid #f00;
+} */
+
+
+
+.selecteditem {
+  background-color: #EBEBEB;;
+  list-style-type: none;
+  margin: 3px;
+  padding: 7px 13px;
+  border-radius: 70px;
+  margin-top: 30px;
+  font-size: 18px;
+  
+  
+}
+.b1{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 4px;
+  flex-direction: row;
+
+  
+}
+
+.selectbox{
+  width: 100%;
+  padding: 12px;
+border-radius: 4px;
+background-color: #FFFFFF;
+font-size: 16px;
+color: #757779;
+font-size: 20px;
+border: 1px solid rgb(182, 181, 181);
+margin-top: 10px;
+}
+
+.selectbox1{
+  width: 100%;
+  padding: 12px;
+border-radius: 4px;
+background-color: #FFFFFF;
+font-size: 16px;
+color: #757779;
+font-size: 20px;
+border: 1px solid red;
+margin-top: 10px;
+}
+
+
+
+select {
+  border-style: inset;
+  outline-color: rgb(182, 181, 181);
+}
+
+
+
+#domain *
+{
+ border-radius: 4px;
+}
+
+.o1{
+
+font-size: 20px;
+background-color: white;
+padding: 3px;
+
+}
+
+.selectDate{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.customFileUpload{
+  padding: 20px;
+  border: 2px dotted rgb(161, 161, 161);
+  margin: auto;
+ 
+
+}
+
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border:2px dotted gray;
+  width: 100%;
+  padding: 50px;
+  border-radius: 5px;
+  margin: auto;
+  cursor: pointer;
+
+}
+
+.btn {
+  border: 2px solid gray;
   color: white;
+  background-color: white;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 15px;
+ background-color: #5494A3;
+ border: none;
+ width: 50%;
+ cursor: pointer;
+ margin-top: 10px;
+
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.inputfilename{
+  text-align: center;
+  margin: 3px;
+}
+
+/* button{
+  width: 100%;
+  background-color:#5494A3;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 3px;
+  font-size: 15px;
+  margin: 20px 0;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+
+} */
+
+
+.button {
+  
+  position: relative;
+  background-color: #5494A3;
+  border: none;
+  font-size: 25px;
+  color: #FFFFFF;
+  padding: 7px;
+  width: 100%;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 30px 0px 10px 0px;
+  border-radius: 3px;
+}
+
+.button:after {
+  content: "";
+  background: #6daab8;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+
+
+
+
+
+
+
+/* .selecteditem:focus{
+
+  border: 2px solid rgb(168, 191, 255);
+} */
+
+p{
+margin-top: 30px;
+font-size: 16px;
+}
+
+.redclass{
+  
+  border: none;
+  border-bottom: 1px solid red;
+  padding: 10px;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 3px;
+
+  
+
+}
+.p1{
+  color: red;
+  margin-top: 2px;
+  
+}
+
+
+
+
+
+img{
+  height: 50px;
+ 
+  margin-top: -25px;
+  z-index: 2;
+
+  width: 30%;
+  box-shadow: 0 3px 10px rgb(197, 190, 190);
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 20px;
+  
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  
+  .maindiv{
+width: 90%;
+margin-top: 60px;
+margin-bottom: 30px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+@media only screen and (max-width: 800px) {
+  
+  .maindiv{
+width: 80%;
+margin-top: 60px;
+margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  
+  .maindiv{
+width: 80%;
+margin-top: 60px;
+margin-bottom: 30px;
   }
 }
